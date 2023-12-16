@@ -8,7 +8,7 @@
       <div>
         <div class="text-black relative">
           <div class="relative">
-            <input type="text" class="rounded-md pl-4 pr-12 py-1 w-48 text-center" v-model="firstLabelValue" @focus="setShowFirstOptions" @blur="setShowFirstOptions" />
+            <input type="text" aria-label="Search" class="rounded-md pl-4 pr-12 py-1 w-48 text-center" v-model="firstLabelValue" @focus="setShowFirstOptions" @blur="setShowFirstOptions" />
             <span class="rotate-90 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none cursor-pointer">&rang;</span>
           </div>
           <div id="first-options" class="bg-white text-lg rounded-xl mt-3 absolute w-full z-20" v-show="showFirstOptions">
@@ -24,6 +24,7 @@
             id="first-input"
             ref="firstInput"
             type="text"
+            aria-label="Option"
             class="border-black border-2 rounded-md pl-4 pr-12 py-1 text-black w-48 text-center"
             v-model="firstInputValue"
             @input="handleFirstInput"
@@ -33,7 +34,7 @@
             class="absolute z-10 right-3 top-1/2 -translate-y-1/2 bg-slate-300 p-2 rounded-3xl shadow-md"
             title="Copy"
           >
-            <img src="./assets/img/icons/copy.svg" class="w-5 hover:scale-110" />
+            <NuxtImg src="./img/icons/copy.svg" alt="Copy Icon" height="20" width="20" class="w-5 hover:scale-110" />
           </button>
           <span
             v-show="showMessageCopiedFirstInput"
@@ -43,12 +44,12 @@
         </div>
       </div>
       <button class="cursor-pointer w-8 h-8 rounded-md bg-slate-800 flex justify-center items-center shadow-slate-300 shadow-2xl" title="Reverse">
-        <img src="./assets/img/icons/swap.svg" class="w-5 rotate-90 sm:rotate-0 hover:scale-110" />
+        <NuxtImg src="./img/icons/swap.svg" alt="Swap Icon" height="20" width="20" class="w-5 rotate-90 sm:rotate-0 hover:scale-110" />
       </button>
       <div>
         <div class="text-black relative">
           <div class="relative">
-            <input type="text" class="rounded-md pl-4 pr-12 py-1 w-48 text-center" v-model="secondLabelValue" @focus="setShowSecondOptions" @blur="setShowSecondOptions" />
+            <input type="text" aria-label="Search" class="rounded-md pl-4 pr-12 py-1 w-48 text-center" v-model="secondLabelValue" @focus="setShowSecondOptions" @blur="setShowSecondOptions" />
             <span class="rotate-90 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none cursor-pointer">&rang;</span>
           </div>
           <div id="second-options" class="bg-white text-lg rounded-xl mt-3 absolute w-full z-20" v-show="showSecondOptions">
@@ -64,6 +65,7 @@
             id="second-input"
             ref="secondInput"
             type="text"
+            aria-label="Option"
             class="border-black border-2 rounded-md pl-4 pr-12 py-1 text-black w-48 text-center"
             v-model="secondInputValue"
             @input="handleSecondInput"
@@ -73,7 +75,7 @@
             class="absolute z-10 right-3 top-1/2 -translate-y-1/2 bg-slate-300 p-2 rounded-3xl shadow-md"
             title="Copy"
           >
-            <img src="./assets/img/icons/copy.svg" class="w-5 hover:scale-110" />
+            <NuxtImg src="./img/icons/copy.svg" alt="Copy Icon" height="20" width="20" class="w-5 hover:scale-110" />
           </button>
           <span
             v-show="showMessageCopiedSecondInput"
