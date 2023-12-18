@@ -26,17 +26,15 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/image',
     '@nuxtjs/robots',
-    '@nuxtjs/sitemap',
-    '@vite-pwa/nuxt'
+    '@vite-pwa/nuxt',
+    'nuxt-simple-sitemap',
   ],
   robots: {
     UserAgent: '*',
     Disallow: '/',
     Sitemap: 'https://4udev.vercel.app/sitemap.xml',
   },
-  sitemap: {
-    path: '/sitemap.xml',
-    hostname: 'https://4udev.vercel.app',
-    generate: true,
+  site: {
+    url: 'https://4udev.vercel.app',
   },
 })
