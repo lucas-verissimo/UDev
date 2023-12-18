@@ -34,7 +34,7 @@
             class="absolute z-10 right-3 top-1/2 -translate-y-1/2 bg-slate-300 p-2 rounded-3xl shadow-md"
             title="Copy"
           >
-            <NuxtImg src="./img/icons/copy.svg" alt="Copy Icon" height="20" width="20" class="w-5 hover:scale-110" />
+            <NuxtImg src="/assets/img/icons/copy.svg" alt="Copy Icon" height="20" width="20" class="w-5 hover:scale-110" />
           </button>
           <span
             v-show="showMessageCopiedFirstInput"
@@ -44,7 +44,7 @@
         </div>
       </div>
       <button class="cursor-pointer w-8 h-8 rounded-md bg-slate-800 flex justify-center items-center shadow-slate-300 shadow-2xl" title="Reverse">
-        <NuxtImg src="./img/icons/swap.svg" alt="Swap Icon" height="20" width="20" class="w-5 rotate-90 sm:rotate-0 hover:scale-110" />
+        <NuxtImg src="/assets/img/icons/swap.svg" alt="Swap Icon" height="20" width="20" class="w-5 rotate-90 sm:rotate-0 hover:scale-110" />
       </button>
       <div>
         <div class="text-black relative">
@@ -75,7 +75,7 @@
             class="absolute z-10 right-3 top-1/2 -translate-y-1/2 bg-slate-300 p-2 rounded-3xl shadow-md"
             title="Copy"
           >
-            <NuxtImg src="./img/icons/copy.svg" alt="Copy Icon" height="20" width="20" class="w-5 hover:scale-110" />
+            <NuxtImg src="/assets/img/icons/copy.svg" alt="Copy Icon" height="20" width="20" class="w-5 hover:scale-110" />
           </button>
           <span
             v-show="showMessageCopiedSecondInput"

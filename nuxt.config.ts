@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       }
     }
   },
-  css: ['~/assets/css/main.css'],
+  css: ['~/public/assets/css/main.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -29,8 +29,5 @@ export default defineNuxtConfig({
   robots: {
     UserAgent: '*',
     Disallow: ''
-  },
-  image: {
-    dir: 'assets'
   },
 })
